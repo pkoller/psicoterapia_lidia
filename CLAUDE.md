@@ -46,22 +46,30 @@ pulito), caricati da Google Fonts.
 
 ## Foto reali
 
-Al momento le sezioni "Chi sono" (hero/about) e "Dove sono" (studio) usano
-dei **placeholder fotografici** (`.photo-placeholder` in `style.css`):
-riquadri con icona + didascalia che indicano quale immagine andrebbe
-inserita.
+La sezione "Chi sono" (hero/about) usa il ritratto reale di Lidia
+(`assets/img/ritratto-lidia.jpg`), mostrato con `<img class="photo" ...>`
+(la classe `.photo` applica angoli arrotondati, ombra e `object-fit: cover`
+in un riquadro 4:5 coerenti col design).
 
-Per sostituirli con foto vere:
+La sezione "Dove sono" (studio) usa ancora la mappa come unico elemento
+visivo. Per aggiungere foto dello studio:
 
-1. Aggiungi il file in `assets/img/` (consigliato: `ritratto-lidia.jpg` —
-   ritratto quadrato/verticale, min. 800×1000px; `studio-1.jpg`,
+1. Aggiungi il file in `assets/img/` (consigliato: `studio-1.jpg`,
    `studio-2.jpg` — foto dello studio, 1200×900px).
-2. Sostituisci il `<div class="photo-placeholder ...">...</div>`
-   corrispondente con `<img src="assets/img/ritratto-lidia.jpg" alt="..."
-   class="photo">` (la classe `.photo` applica già angoli arrotondati e
-   ombra coerenti col design).
+2. Usa `.photo-placeholder` (in `style.css`) come riferimento per il
+   markup di un riquadro foto, oppure direttamente `<img src="assets/img/studio-1.jpg"
+   alt="..." class="photo">`.
 3. Ripeti la modifica in entrambe le pagine (IT e EN), aggiornando l'`alt`
    nella lingua corretta.
+
+## Immagine di anteprima social (Open Graph)
+
+`assets/img/og-image.jpg` (1200×630px) è l'immagine usata per le anteprime
+quando il link viene condiviso (WhatsApp, Facebook, ecc.), referenziata nei
+tag `og:image` / `twitter:image` di entrambe le pagine con URL assoluto
+`https://pkoller.github.io/psicoterapia_lidia/assets/img/og-image.jpg`. Se
+il sito viene pubblicato su un altro domino, aggiorna questi URL assoluti
+(tag `og:url`, `og:image`, `twitter:image`) in entrambe le pagine.
 
 ## Icone/illustrazioni SVG
 

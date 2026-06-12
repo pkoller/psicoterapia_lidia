@@ -402,6 +402,13 @@ section.alt {
   box-shadow: var(--shadow-card);
 }
 
+.photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
 .photo-placeholder {
   position: relative;
   width: 100%;

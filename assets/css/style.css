@@ -15,6 +15,7 @@
   --brown-light: #8a786d;
   --gold: #e3b873;
   --white: #ffffff;
+  --border: rgba(74, 59, 51, 0.09);
 
   /* Tipografia */
   --font-display: "Fraunces", "Georgia", serif;
@@ -22,11 +23,11 @@
 
   /* Spaziature & forme */
   --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 32px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
   --radius-pill: 999px;
-  --shadow-soft: 0 12px 30px -12px rgba(74, 59, 51, 0.18);
-  --shadow-card: 0 8px 24px -10px rgba(74, 59, 51, 0.15);
+  --shadow-soft: 0 14px 32px -18px rgba(74, 59, 51, 0.28);
+  --shadow-card: 0 4px 16px -8px rgba(74, 59, 51, 0.1);
   --max-width: 1140px;
 }
 
@@ -47,6 +48,7 @@ body {
   color: var(--brown);
   background-color: var(--cream);
   line-height: 1.65;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -175,19 +177,18 @@ section.alt {
   gap: 0.6em;
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   padding: 14px 28px;
   border-radius: var(--radius-pill);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    background-color 0.15s ease, color 0.15s ease;
+  transition: box-shadow 0.18s ease, background-color 0.18s ease,
+    color 0.18s ease, border-color 0.18s ease;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
   text-decoration: none;
 }
 
@@ -199,16 +200,18 @@ section.alt {
 
 .btn-primary:hover {
   background-color: var(--terracotta-dark);
+  box-shadow: 0 16px 32px -16px rgba(74, 59, 51, 0.36);
 }
 
 .btn-secondary {
   background-color: transparent;
-  border-color: var(--terracotta);
+  border-color: var(--border);
   color: var(--terracotta-dark);
 }
 
 .btn-secondary:hover {
   background-color: var(--terracotta);
+  border-color: var(--terracotta);
   color: var(--white);
 }
 
@@ -220,6 +223,7 @@ section.alt {
 
 .btn-whatsapp:hover {
   background-color: #7c9474;
+  box-shadow: 0 16px 32px -16px rgba(74, 59, 51, 0.36);
 }
 
 .btn-block {
@@ -231,9 +235,9 @@ section.alt {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(251, 244, 236, 0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(74, 59, 51, 0.07);
+  background-color: rgba(251, 244, 236, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
 }
 
 .nav-wrap {
@@ -294,8 +298,8 @@ section.alt {
 
 .main-nav a:not(.btn) {
   color: var(--brown);
-  font-weight: 700;
-  font-size: 0.96rem;
+  font-weight: 600;
+  font-size: 0.94rem;
 }
 
 .main-nav a:not(.btn):hover {
@@ -382,10 +386,12 @@ section.alt {
 
 .hero-art .blob {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--sage-light) 0%, var(--cream-soft) 60%, var(--gold) 130%);
+  inset: -6%;
+  background: radial-gradient(circle at 32% 28%, var(--gold) 0%, transparent 55%),
+    radial-gradient(circle at 75% 80%, var(--sage-light) 0%, transparent 60%),
+    var(--cream-soft);
   border-radius: var(--radius-lg);
-  transform: rotate(-3deg) scale(1.04);
+  opacity: 0.85;
   z-index: 0;
 }
 
@@ -421,7 +427,7 @@ section.alt {
   text-align: center;
   padding: 32px;
   background: linear-gradient(160deg, var(--sage-light) 0%, var(--cream-soft) 100%);
-  border: 1px dashed rgba(74, 59, 51, 0.25);
+  border: 1px dashed rgba(74, 59, 51, 0.22);
   color: var(--brown-light);
   z-index: 1;
 }
@@ -502,14 +508,16 @@ section.alt {
 .service-card {
   background-color: var(--white);
   border-radius: var(--radius-md);
+  border: 1px solid var(--border);
   padding: 32px 26px;
   box-shadow: var(--shadow-card);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px -12px rgba(74, 59, 51, 0.22);
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 18px 32px -16px rgba(74, 59, 51, 0.22);
 }
 
 .service-card .icon-wrap {
@@ -552,6 +560,7 @@ section.alt {
   padding: 36px 28px 28px;
   background-color: var(--white);
   border-radius: var(--radius-md);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow-card);
 }
 
@@ -691,6 +700,7 @@ section.alt {
 .contact-card {
   background-color: var(--white);
   border-radius: var(--radius-md);
+  border: 1px solid var(--border);
   padding: 32px 28px;
   box-shadow: var(--shadow-card);
   text-align: center;

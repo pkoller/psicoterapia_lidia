@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" role="img" aria-labelledby="genogramTitle" class="genogram-svg">
+  <title id="genogramTitle">Schema simile a un genogramma: persone e legami familiari connessi da linee, con un nodo centrale in evidenza</title>
+
+  <!-- generation 1: couple -->
+  <line class="g-line" x1="150" y1="70" x2="270" y2="70"/>
+  <line class="g-line" x1="210" y1="70" x2="210" y2="140"/>
+  <rect class="g-shape" x="120" y="40" width="60" height="60" rx="2"/>
+  <circle class="g-shape" cx="270" cy="70" r="32"/>
+
+  <!-- generation 1: second couple, upper right -->
+  <line class="g-line" x1="350" y1="40" x2="440" y2="40"/>
+  <line class="g-line" x1="395" y1="40" x2="395" y2="140"/>
+  <circle class="g-shape" cx="350" cy="40" r="30"/>
+  <rect class="g-shape" x="410" y="10" width="60" height="60" rx="2"/>
+
+  <!-- connecting line between the two family lines -->
+  <line class="g-line g-line--long" x1="210" y1="140" x2="395" y2="140"/>
+
+  <!-- generation 2: siblings, hanging from the joined line -->
+  <line class="g-line" x1="260" y1="140" x2="260" y2="200"/>
+  <line class="g-line" x1="330" y1="140" x2="330" y2="200"/>
+  <line class="g-line" x1="260" y1="200" x2="330" y2="200"/>
+
+  <rect class="g-shape" x="232" y="200" width="56" height="56" rx="2"/>
+
+  <!-- focal node: filled, the one this practice holds space for -->
+  <circle class="g-shape g-shape--focal" cx="330" cy="232" r="34"/>
+
+  <!-- descendant thread, drifting toward the present -->
+  <line class="g-line g-line--thread" x1="330" y1="266" x2="330" y2="340"/>
+  <circle class="g-shape" cx="330" cy="372" r="26"/>
+</svg>

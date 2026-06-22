@@ -24,7 +24,7 @@
   <link rel="alternate" hreflang="en" href="en/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&family=Karla:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -84,8 +84,25 @@
           </div>
         </div>
         <div class="hero-art">
-          <div class="blob" aria-hidden="true"></div>
-          <img src="assets/img/illustration-hero.svg" alt="Illustrazione di un paesaggio sereno con colline verdi, sole e una pianta in vaso, simbolo di crescita e tranquillità">
+          <svg viewBox="0 0 520 460" role="img" aria-labelledby="genogramTitle" class="genogram-svg">
+            <title id="genogramTitle">Schema simile a un genogramma: persone e legami familiari connessi da linee, con un nodo centrale in evidenza</title>
+            <line class="g-line" x1="150" y1="70" x2="270" y2="70"/>
+            <line class="g-line" x1="210" y1="70" x2="210" y2="140"/>
+            <rect class="g-shape" x="120" y="40" width="60" height="60" rx="2"/>
+            <circle class="g-shape" cx="270" cy="70" r="32"/>
+            <line class="g-line" x1="350" y1="40" x2="440" y2="40"/>
+            <line class="g-line" x1="395" y1="40" x2="395" y2="140"/>
+            <circle class="g-shape" cx="350" cy="40" r="30"/>
+            <rect class="g-shape" x="410" y="10" width="60" height="60" rx="2"/>
+            <line class="g-line g-line--long" x1="210" y1="140" x2="395" y2="140"/>
+            <line class="g-line" x1="260" y1="140" x2="260" y2="200"/>
+            <line class="g-line" x1="330" y1="140" x2="330" y2="200"/>
+            <line class="g-line" x1="260" y1="200" x2="330" y2="200"/>
+            <rect class="g-shape" x="232" y="200" width="56" height="56" rx="2"/>
+            <circle class="g-shape g-shape--focal" cx="330" cy="232" r="34"/>
+            <line class="g-line g-line--thread" x1="330" y1="266" x2="330" y2="340"/>
+            <circle class="g-shape" cx="330" cy="372" r="26"/>
+          </svg>
         </div>
       </div>
     </section>
@@ -93,7 +110,10 @@
     <!-- CHI SONO -->
     <section id="about" class="alt">
       <div class="container about-grid reveal">
-        <img class="photo" src="assets/img/ritratto-lidia.jpg" alt="Ritratto della Dott.ssa Lidia Simonetta Biacchi, psicoterapeuta">
+        <div>
+          <img class="photo" src="assets/img/ritratto-lidia.jpg" alt="Ritratto della Dott.ssa Lidia Simonetta Biacchi, psicoterapeuta">
+          <p class="photo-caption">Studio di Macherio (MB)</p>
+        </div>
         <div>
           <p class="eyebrow">Chi sono</p>
           <h2>Dott.ssa Lidia Simonetta Biacchi</h2>
@@ -155,66 +175,47 @@
             alcune delle aree in cui posso accompagnarti.
           </p>
         </div>
-        <div class="services-grid reveal">
-          <div class="service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 20.5s-7.5-4.6-9.3-9.2C1.6 8.3 3.3 5 6.6 5c2 0 3.5 1.2 4.4 2.6C11.9 6.2 13.4 5 15.4 5c3.3 0 5 3.3 3.9 6.3-1.8 4.6-9.3 9.2-9.3 9.2z"/>
-              </svg>
+        <div class="services-list reveal">
+          <div class="service-row">
+            <span class="label">Individuale</span>
+            <div>
+              <h3>Percorso individuale</h3>
+              <p>
+                Per affrontare ansia, stress, momenti di sconforto o periodi
+                di cambiamento, ritrovando fiducia in te stesso/a.
+              </p>
             </div>
-            <h3>Percorso individuale</h3>
-            <p>
-              Per affrontare ansia, stress, momenti di sconforto o periodi
-              di cambiamento, ritrovando fiducia in te stesso/a.
-            </p>
           </div>
-          <div class="service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="9" cy="8" r="3"/>
-                <path d="M3.5 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/>
-                <circle cx="17" cy="7" r="2.4"/>
-                <path d="M15.5 12.2c2.4.3 4 2.1 4 4.8"/>
-              </svg>
+          <div class="service-row">
+            <span class="label">Coppia</span>
+            <div>
+              <h3>Per la coppia</h3>
+              <p>
+                Per ritrovare il dialogo, affrontare i momenti di crisi o
+                vivere con maggiore consapevolezza le scelte importanti,
+                comprese le separazioni.
+              </p>
             </div>
-            <h3>Per la coppia</h3>
-            <p>
-              Per ritrovare il dialogo, affrontare i momenti di crisi o
-              vivere con maggiore consapevolezza le scelte importanti,
-              comprese le separazioni.
-            </p>
           </div>
-          <div class="service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="7" cy="8" r="2.6"/>
-                <circle cx="17" cy="8" r="2.6"/>
-                <circle cx="12" cy="13" r="2"/>
-                <path d="M2.5 20c.3-2.8 2.2-4.6 4.7-4.6 1.5 0 2.8.7 3.6 1.9"/>
-                <path d="M21.5 20c-.3-2.8-2.2-4.6-4.7-4.6-1.5 0-2.8.7-3.6 1.9"/>
-                <path d="M9 20c.3-1.8 1.5-3 3-3s2.7 1.2 3 3"/>
-              </svg>
+          <div class="service-row">
+            <span class="label">Famiglia</span>
+            <div>
+              <h3>Per la famiglia</h3>
+              <p>
+                Per affrontare insieme cambiamenti, conflitti tra generazioni,
+                lutti e nuove fasi della vita familiare.
+              </p>
             </div>
-            <h3>Per la famiglia</h3>
-            <p>
-              Per affrontare insieme cambiamenti, conflitti tra generazioni,
-              lutti e nuove fasi della vita familiare.
-            </p>
           </div>
-          <div class="service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="7" width="18" height="12" rx="2"/>
-                <path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/>
-                <path d="M3 12h18"/>
-                <path d="M11 12h2v2h-2z"/>
-              </svg>
+          <div class="service-row">
+            <span class="label">Lavoro</span>
+            <div>
+              <h3>Ambito lavorativo</h3>
+              <p>
+                Per gestire lo stress legato al lavoro, i cambiamenti
+                professionali e le difficoltà nelle relazioni lavorative.
+              </p>
             </div>
-            <h3>Ambito lavorativo</h3>
-            <p>
-              Per gestire lo stress legato al lavoro, i cambiamenti
-              professionali e le difficoltà nelle relazioni lavorative.
-            </p>
           </div>
         </div>
       </div>
@@ -264,6 +265,24 @@
 
     <!-- SPAZIO SICURO -->
     <section id="safe-space">
+      <svg class="safe-space-watermark" viewBox="0 0 520 460" aria-hidden="true">
+        <line class="g-line" x1="150" y1="70" x2="270" y2="70"/>
+        <line class="g-line" x1="210" y1="70" x2="210" y2="140"/>
+        <rect class="g-shape" x="120" y="40" width="60" height="60" rx="2"/>
+        <circle class="g-shape" cx="270" cy="70" r="32"/>
+        <line class="g-line" x1="350" y1="40" x2="440" y2="40"/>
+        <line class="g-line" x1="395" y1="40" x2="395" y2="140"/>
+        <circle class="g-shape" cx="350" cy="40" r="30"/>
+        <rect class="g-shape" x="410" y="10" width="60" height="60" rx="2"/>
+        <line class="g-line g-line--long" x1="210" y1="140" x2="395" y2="140"/>
+        <line class="g-line" x1="260" y1="140" x2="260" y2="200"/>
+        <line class="g-line" x1="330" y1="140" x2="330" y2="200"/>
+        <line class="g-line" x1="260" y1="200" x2="330" y2="200"/>
+        <rect class="g-shape" x="232" y="200" width="56" height="56" rx="2"/>
+        <circle class="g-shape g-shape--focal" cx="330" cy="232" r="34"/>
+        <line class="g-line g-line--thread" x1="330" y1="266" x2="330" y2="340"/>
+        <circle class="g-shape" cx="330" cy="372" r="26"/>
+      </svg>
       <div class="container">
         <div class="safe-space reveal">
           <div class="icon-wrap">

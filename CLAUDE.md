@@ -1,4 +1,4 @@
-# Psicoterapia Lidia Simonetta — sito web
+# Psicoterapia Lidia Simonetta Biacchi — sito web
 
 Sito vetrina per la Dott.ssa Lidia Simonetta Biacchi, psicoterapeuta a
 orientamento sistemico-relazionale (studio a Macherio/Monza, MB).

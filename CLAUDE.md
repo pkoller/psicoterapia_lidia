@@ -18,11 +18,13 @@ python3 -m http.server 8000
 ## Struttura
 
 ```
-index.html          → homepage in italiano (lingua principale)
-en/index.html        → homepage in inglese (stessa struttura, contenuti tradotti)
-assets/css/style.css → unico foglio di stile, condiviso dalle due pagine
-assets/js/main.js    → menu mobile, animazioni di apparizione, anno footer
-assets/img/          → icone e illustrazioni SVG (vedi sotto)
+index.html              → homepage in italiano (lingua principale)
+en/index.html           → homepage in inglese (stessa struttura, contenuti tradotti)
+informazioni-legali.html → pagina con i dati legali/professionali completi (IT)
+en/legal-notice.html     → equivalente in inglese della pagina legale
+assets/css/style.css    → unico foglio di stile, condiviso da tutte le pagine
+assets/js/main.js       → menu mobile, animazioni di apparizione, anno footer
+assets/img/             → icone e illustrazioni SVG (vedi sotto)
 ```
 
 Le due pagine (`index.html` e `en/index.html`) hanno **la stessa struttura
@@ -84,12 +86,31 @@ in CSS, aggiorna anche i colori `fill`/`stroke` in questi SVG.
 - Telefono / WhatsApp: +39 338 119 4532
 - Email: lalidiasimonetta@hotmail.com
 - Indirizzo studio: Via Vincenzo Bellini, 25, 20846 Macherio (MB), Italia
-- Numero Albo / iscrizione Ordine Psicologi: **da inserire** — è presente
-  un placeholder `[N. iscrizione Albo Psicologi ...]` nel footer di
-  entrambe le pagine, da completare con i dati reali.
+- Partita IVA: 04301050136
+- Iscrizione Albo degli Psicologi della Lombardia: n. 5070 del 02/03/1999
 
-Se questi dati cambiano, aggiornali in **entrambe** le pagine (header
-contatti, sezione `#contact`, footer, e nel link mappa/WhatsApp).
+Se questi dati cambiano, aggiornali in **tutte** le pagine (header
+contatti, sezione `#contact`, footer, link mappa/WhatsApp, e la pagina
+delle informazioni legali).
+
+## Informazioni legali (Partita IVA / Albo)
+
+Per i professionisti italiani con sito web, la normativa (art. 35, comma 1
+del DPR n. 633/1972) richiede che la Partita IVA sia indicata nella
+**home page** del sito, non solo in una sottopagina. Per questo:
+
+- Footer di `index.html` / `en/index.html`: contiene già P.IVA e numero di
+  iscrizione all'Albo (sia nella colonna "Informazioni legali" del
+  `footer-grid`, sia nella riga di copyright in `footer-bottom`).
+- `informazioni-legali.html` (IT) e `en/legal-notice.html` (EN): pagine di
+  riepilogo con tutti i dati legali/professionali (titolare, iscrizione
+  Albo, P.IVA, sede, contatti). Sono pagine satellite (non hanno gli `id`
+  di sezione della homepage); i link di navigazione puntano alle ancore
+  della homepage (es. `index.html#about`).
+
+Se cambia il numero di iscrizione all'Albo o la P.IVA, aggiorna tutti e
+quattro i file: `index.html`, `en/index.html`, `informazioni-legali.html`,
+`en/legal-notice.html`.
 
 ## Note di contenuto
 

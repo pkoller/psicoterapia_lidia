@@ -398,7 +398,9 @@ section.alt {
 .hero-art img {
   position: relative;
   z-index: 1;
+  width: 100%;
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
 /* ---------- Photo placeholders ---------- */

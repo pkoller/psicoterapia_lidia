@@ -53,6 +53,12 @@ La sezione "Chi sono" (hero/about) usa il ritratto reale di Lidia
 (la classe `.photo` applica angoli arrotondati, ombra e `object-fit: cover`
 in un riquadro 4:5 coerenti col design).
 
+L'hero usa una foto di Lidia nel suo studio
+(`assets/img/hero-lidia-studio.jpg`), un ritaglio ~600:520 della panoramica
+`assets/img/foto_lidia_office.png` (file sorgente, non referenziato dalle
+pagine). Se rigeneri il ritaglio, mantieni proporzioni simili: l'immagine
+è mostrata dentro `.hero-art` sopra il "blob" decorativo.
+
 La sezione "Dove sono" (studio) usa ancora la mappa come unico elemento
 visivo. Per aggiungere foto dello studio:
 
@@ -76,7 +82,7 @@ il sito viene pubblicato su un altro domino, aggiorna questi URL assoluti
 ## Icone/illustrazioni SVG
 
 In `assets/img/`: icone lineari nei colori della palette (cuore, persone,
-famiglia, valigetta, scudo, foglia) e un'illustrazione hero. Sono file SVG
+famiglia, valigetta, scudo, foglia). Sono file SVG
 statici con colori hardcoded coerenti con la palette — se cambi la palette
 in CSS, aggiorna anche i colori `fill`/`stroke` in questi SVG.
 

@@ -412,7 +412,7 @@ section.alt {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center;
 }
 
 .photo-placeholder {

@@ -1,7 +1,7 @@
 # Psicoterapia Lidia Simonetta Biacchi — sito web
 
 Sito vetrina per la Dott.ssa Lidia Simonetta Biacchi, psicoterapeuta a
-orientamento sistemico-relazionale (studio a Macherio/Monza, MB).
+orientamento sistemico-relazionale (studio a Monza, MB).
 
 ## Stack tecnico
 
@@ -91,7 +91,7 @@ in CSS, aggiorna anche i colori `fill`/`stroke` in questi SVG.
 - Nome: Dott.ssa Lidia Simonetta Biacchi
 - Telefono / WhatsApp: +39 338 119 4532
 - Email: lalidiasimonetta@hotmail.com
-- Indirizzo studio: Via Vincenzo Bellini, 25, 20846 Macherio (MB), Italia
+- Indirizzo studio: Via Carlo Poma, 2, 20900 Monza (MB), Italia
 - Partita IVA: 04301050136
 - Iscrizione Albo degli Psicologi della Lombardia: n. 5070 del 02/03/1999
 

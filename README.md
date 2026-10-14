@@ -32,7 +32,10 @@ all'Albo, Partita IVA, sede, contatti).
 
 - HTML + CSS + JavaScript vanilla
 - **Nessuna build, nessuna dipendenza npm**
-- Font da Google Fonts: **Fraunces** (titoli) e **Mulish** (testo)
+- Font **Fraunces** (titoli) e **Mulish** (testo), ospitati sul sito
+  (`assets/fonts/`), senza richieste a Google Fonts
+- Banner cookie: la mappa di Google Maps viene caricata solo dopo il
+  consenso del visitatore (vedi [`CLAUDE.md`](CLAUDE.md#cookie-e-privacy-gdpr))
 - Pubblicabile così com'è su qualunque hosting statico (GitHub Pages,
   Netlify, Cloudflare Pages, …). URL attuale:
   <https://pkoller.github.io/psicoterapia_lidia/>
@@ -54,7 +57,9 @@ en/index.html             → homepage in inglese (stessa struttura e stessi id)
 informazioni-legali.html  → dati legali/professionali (IT)
 en/legal-notice.html      → dati legali/professionali (EN)
 assets/css/style.css      → unico foglio di stile condiviso
-assets/js/main.js         → menu mobile, animazioni "reveal" allo scroll, anno nel footer
+assets/css/fonts.css      → @font-face dei font self-hosted
+assets/fonts/             → file .woff2 di Fraunces e Mulish
+assets/js/main.js         → menu mobile, animazioni "reveal", anno nel footer, banner cookie e mappa con consenso
 assets/img/               → foto, icone SVG, favicon, immagine Open Graph
 CLAUDE.md                 → linee guida dettagliate per chi modifica il sito
 ```

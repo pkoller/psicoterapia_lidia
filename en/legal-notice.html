@@ -9,9 +9,7 @@
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
   <link rel="alternate" hreflang="it" href="../informazioni-legali.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -104,6 +102,30 @@
           no. 633/1972), the VAT number is shown on the website's home page,
           as well as on this summary page.
         </p>
+        <div class="legal-section" id="cookie">
+          <h2>Privacy and cookies</h2>
+          <p>
+            This website does not use profiling cookies, analytics or
+            tracking tools. Fonts are hosted directly on this site, with no
+            connection to external services.
+          </p>
+          <p>
+            The &ldquo;Location&rdquo; section of the homepage can display
+            a <strong>Google Maps</strong> map (a service of Google Ireland
+            Ltd.). The map is loaded only after you give consent, via the
+            banner or the &ldquo;Load the map&rdquo; button: from then on,
+            Google may receive your IP address and set its own cookies,
+            under
+            <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Google's privacy policy</a>.
+          </p>
+          <p>
+            Your choice is stored only in your browser (localStorage) and you
+            can change it at any time.
+          </p>
+          <p>
+            <button type="button" class="btn btn-secondary" data-cookie-settings>Change cookie preferences</button>
+          </p>
+        </div>
         <p>
           <a class="btn btn-secondary" href="index.html">&larr; Back to homepage</a>
         </p>
@@ -146,6 +168,7 @@
             <li>VAT No. (P.IVA) 04301050136</li>
             <li>Registered with the Regional Board<br>of Psychologists of Lombardy, no. 5070, 02/03/1999</li>
             <li><a href="legal-notice.html" aria-current="page">Full legal information</a></li>
+            <li><button type="button" class="link-button" data-cookie-settings>Cookie preferences</button></li>
           </ul>
         </div>
       </div>
@@ -158,6 +181,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="cookie-banner" role="region" aria-label="Cookie notice" data-cookie-banner hidden>
+    <p class="cookie-banner-text">
+      <strong>Your privacy matters</strong>
+      This website uses no profiling cookies or analytics. The only external content is a Google Maps map, which is loaded only with your consent. <a href="legal-notice.html#cookie">Learn more</a>.
+    </p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-secondary" data-consent-reject>Decline</button>
+      <button type="button" class="btn btn-primary" data-consent-accept>Accept</button>
+    </div>
+  </div>
 
   <script src="../assets/js/main.js"></script>
 </body>

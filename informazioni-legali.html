@@ -9,9 +9,7 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="alternate" hreflang="en" href="en/legal-notice.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -104,6 +102,31 @@
           è indicata nella home-page del sito, oltre che in questa pagina di
           riepilogo.
         </p>
+        <div class="legal-section" id="cookie">
+          <h2>Privacy e cookie</h2>
+          <p>
+            Questo sito non utilizza cookie di profilazione né strumenti di
+            statistica o di tracciamento. I caratteri tipografici sono
+            ospitati direttamente sul sito, senza collegamenti a servizi
+            esterni.
+          </p>
+          <p>
+            La sezione &laquo;Dove sono&raquo; della homepage può mostrare
+            una mappa di <strong>Google Maps</strong> (servizio di Google
+            Ireland Ltd.). La mappa viene caricata solo dopo il tuo consenso,
+            espresso tramite il banner o il pulsante &laquo;Carica la
+            mappa&raquo;: da quel momento Google può ricevere il tuo
+            indirizzo IP e impostare cookie propri, secondo la
+            <a href="https://policies.google.com/privacy?hl=it" target="_blank" rel="noopener">privacy policy di Google</a>.
+          </p>
+          <p>
+            La tua scelta viene memorizzata solo nel tuo browser
+            (localStorage) e puoi modificarla in qualsiasi momento.
+          </p>
+          <p>
+            <button type="button" class="btn btn-secondary" data-cookie-settings>Modifica le preferenze cookie</button>
+          </p>
+        </div>
         <p>
           <a class="btn btn-secondary" href="index.html">&larr; Torna alla homepage</a>
         </p>
@@ -146,6 +169,7 @@
             <li>P.IVA 04301050136</li>
             <li>Iscrizione Albo degli Psicologi<br>della Lombardia n. 5070 del 02/03/1999</li>
             <li><a href="informazioni-legali.html" aria-current="page">Tutte le informazioni legali</a></li>
+            <li><button type="button" class="link-button" data-cookie-settings>Preferenze cookie</button></li>
           </ul>
         </div>
       </div>
@@ -158,6 +182,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="cookie-banner" role="region" aria-label="Informativa sui cookie" data-cookie-banner hidden>
+    <p class="cookie-banner-text">
+      <strong>Rispetto la tua privacy</strong>
+      Questo sito non usa cookie di profilazione né strumenti di statistica. L'unico contenuto esterno è la mappa di Google Maps, che viene caricata solo se dai il consenso. <a href="informazioni-legali.html#cookie">Maggiori informazioni</a>.
+    </p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-secondary" data-consent-reject>Rifiuta</button>
+      <button type="button" class="btn btn-primary" data-consent-accept>Accetta</button>
+    </div>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

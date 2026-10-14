@@ -23,7 +23,10 @@ en/index.html           → homepage in inglese (stessa struttura, contenuti tra
 informazioni-legali.html → pagina con i dati legali/professionali completi (IT)
 en/legal-notice.html     → equivalente in inglese della pagina legale
 assets/css/style.css    → unico foglio di stile, condiviso da tutte le pagine
-assets/js/main.js       → menu mobile, animazioni di apparizione, anno footer
+assets/css/fonts.css    → @font-face dei font self-hosted
+assets/fonts/           → file .woff2 di Fraunces e Mulish (subset latin/latin-ext)
+assets/js/main.js       → menu mobile, animazioni di apparizione, anno footer,
+                          banner cookie e caricamento della mappa con consenso
 assets/img/             → icone e illustrazioni SVG (vedi sotto)
 ```
 
@@ -44,7 +47,9 @@ Palette calda e accogliente:
 - `--gold` — accenti decorativi
 
 Tipografia: **Fraunces** (titoli, serif caldo) + **Mulish** (testo, sans
-pulito), caricati da Google Fonts.
+pulito), **ospitati sul sito** (`assets/fonts/` + `assets/css/fonts.css`),
+non caricati da Google Fonts: così l'IP dei visitatori non viene trasmesso a
+Google (GDPR). Non reintrodurre link a `fonts.googleapis.com`.
 
 ## Foto reali
 
@@ -117,6 +122,27 @@ del DPR n. 633/1972) richiede che la Partita IVA sia indicata nella
 Se cambia il numero di iscrizione all'Albo o la P.IVA, aggiorna tutti e
 quattro i file: `index.html`, `en/index.html`, `informazioni-legali.html`,
 `en/legal-notice.html`.
+
+## Cookie e privacy (GDPR)
+
+Il sito non usa cookie di profilazione né analytics. L'unico contenuto di
+terze parti è la mappa di Google Maps nella sezione `#location`, che viene
+caricata **solo dopo il consenso**:
+
+- Nelle homepage la mappa è un segnaposto
+  `<div class="map-frame map-consent" data-map-src="..." data-map-title="...">`
+  con il pulsante "Carica la mappa" e un link esterno a Google Maps; `main.js`
+  sostituisce il segnaposto con l'`<iframe>` solo dopo il consenso.
+- Tutte e quattro le pagine hanno il banner (`[data-cookie-banner]`, prima
+  dello script) con "Rifiuta" / "Accetta" e, nel footer, il pulsante
+  "Preferenze cookie" (`[data-cookie-settings]`) per cambiare la scelta.
+- La scelta è salvata in `localStorage` (chiave `cookie-consent`, valori
+  `accepted` / `rejected`).
+- L'informativa è nella sezione `#cookie` di `informazioni-legali.html` e
+  `en/legal-notice.html`.
+
+Se aggiungi altri servizi esterni (video, analytics, widget), vanno
+bloccati allo stesso modo fino al consenso e descritti nell'informativa.
 
 ## Note di contenuto
 

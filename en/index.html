@@ -22,9 +22,7 @@
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
   <link rel="alternate" hreflang="it" href="../index.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -326,13 +324,19 @@
           </ul>
           <a class="btn btn-primary" href="#contact">Book a meeting</a>
         </div>
-        <iframe
-          class="map-frame reveal"
-          title="Map: Via Carlo Poma 2, Monza (MB)"
-          src="https://www.google.com/maps?q=Via+Carlo+Poma+2+20900+Monza+MB+Italia&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen></iframe>
+        <div class="map-frame map-consent reveal" data-map-src="https://www.google.com/maps?q=Via+Carlo+Poma+2+20900+Monza+MB+Italia&output=embed" data-map-title="Map: Via Carlo Poma 2, Monza (MB)">
+          <span class="icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/>
+              <circle cx="12" cy="10" r="2.4"/>
+            </svg>
+          </span>
+          <p>Showing the map loads content from Google Maps, which may set cookies and receive your IP address.</p>
+          <div class="map-consent-actions">
+            <button type="button" class="btn btn-primary" data-consent-accept>Load the map</button>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Carlo+Poma+2+20900+Monza+MB+Italia" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -426,6 +430,7 @@
             <li>VAT No. (P.IVA) 04301050136</li>
             <li>Registered with the Regional Board<br>of Psychologists of Lombardy, no. 5070, 02/03/1999</li>
             <li><a href="legal-notice.html">Full legal information</a></li>
+            <li><button type="button" class="link-button" data-cookie-settings>Cookie preferences</button></li>
           </ul>
         </div>
       </div>
@@ -438,6 +443,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="cookie-banner" role="region" aria-label="Cookie notice" data-cookie-banner hidden>
+    <p class="cookie-banner-text">
+      <strong>Your privacy matters</strong>
+      This website uses no profiling cookies or analytics. The only external content is a Google Maps map, which is loaded only with your consent. <a href="legal-notice.html#cookie">Learn more</a>.
+    </p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-secondary" data-consent-reject>Decline</button>
+      <button type="button" class="btn btn-primary" data-consent-accept>Accept</button>
+    </div>
+  </div>
 
   <script src="../assets/js/main.js"></script>
 </body>

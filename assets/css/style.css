@@ -992,6 +992,12 @@ section.alt {
     gap: 40px;
   }
 
+  /* Su mobile l'immagine sta in cima: poco spazio sopra, solo quanto
+     basta per non tagliare il bordo del "blob" (inset: -6%). */
+  .hero {
+    padding-top: 32px;
+  }
+
   .hero-art {
     order: -1;
     max-width: 420px;

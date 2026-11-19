@@ -82,14 +82,16 @@ visivo. Per aggiungere foto dello studio:
 `assets/img/og-image.jpg` (1200×630px) è l'immagine usata per le anteprime
 quando il link viene condiviso (WhatsApp, Facebook, ecc.), referenziata nei
 tag `og:image` / `twitter:image` di entrambe le pagine con URL assoluto
-`https://lidiasimonettapsicoterapeuta.it/assets/img/og-image.jpg?v=2`. Se
-il sito viene pubblicato su un altro domino, aggiorna questi URL assoluti
-(tag `og:url`, `og:image`, `twitter:image`) in entrambe le pagine.
+`https://lidiasimonettapsicoterapeuta.it/assets/img/og-image.jpg` (senza
+parametro di versione). Se il sito viene pubblicato su un altro domino,
+aggiorna questi URL assoluti (tag `og:url`, `og:image`, `twitter:image`) in
+entrambe le pagine.
 
-Quando sostituisci `og-image.jpg`, incrementa anche il parametro `?v=N`
-negli URL `og:image` / `twitter:image` di entrambe le pagine: WhatsApp e
-Facebook mettono in cache l'anteprima per URL, quindi senza un URL nuovo
-continuano a mostrare l'immagine vecchia.
+Quando sostituisci `og-image.jpg` dopo che il sito è già stato condiviso,
+aggiungi (o incrementa) un parametro `?v=N` negli URL `og:image` /
+`twitter:image` di entrambe le pagine: WhatsApp e Facebook mettono in cache
+l'anteprima per URL, quindi senza un URL nuovo continuano a mostrare
+l'immagine vecchia.
 
 ## Icone/illustrazioni SVG
 

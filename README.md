@@ -38,7 +38,7 @@ all'Albo, Partita IVA, sede, contatti).
   consenso del visitatore (vedi [`CLAUDE.md`](CLAUDE.md#cookie-e-privacy-gdpr))
 - Pubblicabile così com'è su qualunque hosting statico (GitHub Pages,
   Netlify, Cloudflare Pages, …). URL attuale:
-  <https://pkoller.github.io/psicoterapia_lidia/>
+  <https://lidiasimonettapsicoterapeuta.it/>
 
 ## Avvio in locale
 

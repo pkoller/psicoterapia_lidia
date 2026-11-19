@@ -489,6 +489,36 @@ section.alt {
 }
 
 /* ---------- Services ---------- */
+.focus-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.focus-tags li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background-color: var(--sage-light);
+  color: var(--brown);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.focus-tags li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--sage);
+  flex-shrink: 0;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
